@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Olimlist</title>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" id="logo" alt="Olimlist logo">
-        <!-- <div class="logo">
-
-        </div> -->
+        <div class="container">
+            <img src="./img/logo.png" id="logo" alt="Olimlist logo">
         <nav>
             <ul>
-                <li><a href="">About Aliyah</a></li>
-                <li><a href="">Before Flight</a></li>
-                <li><a href="">At the Airport</a></li>
-                <li><a href="">First Steps in Israel</a></li>
+                <li><a href="#">About Aliyah</a></li>
+                <li><a href="#">Before Flight</a></li>
+                <li><a href="#">At the Airport</a></li>
+                <li><a href="#">First Steps in Israel</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
-        <section id="photo-menu">
-            <div class="row">
-                <div class="column">
-                    <img src="images/before.jpg" alt="">
-                    <div class="overlay"></div>
-                </div>
-                <div class="column">
-                    <img src="images/airport.jpg" alt="">
-                    <div class="overlay"></div>
-                </div>
-                <div class="column">
-                    <img src="images/first-steps.jpg" alt="">
-                    <div class="overlay"></div>
+        <section class="photo-menu">
+            <div class="container">
+                <div class="photo__row">
+                    <div class="photo__column">
+                        <img src="./img/before.jpg" alt="before flight">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="photo__column">
+                        <img src="./img/airport.jpg" alt="at the airport">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="photo__column">
+                        <img src="./img/first-steps.jpg" alt="first steps">
+                        <div class="overlay"></div>
+                    </div>
                 </div>
             </div>
         </section>

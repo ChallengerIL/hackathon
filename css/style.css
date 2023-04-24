@@ -71,16 +71,21 @@ a:hover {
 
 .photo-menu{
     background-color: #043873;
+    background: #043873 url(../img/bg-top.png) no-repeat center top;
+    background-size: cover;
 }
 
 .photo__row{
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    padding-bottom: 70px;
 }
 
 .photo__column{
     width: 33%;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .overlay{
@@ -93,10 +98,19 @@ a:hover {
     min-width: 100%;
     background-color: rgba(0,0,0,0.5);
     padding: 20px 0;
+    margin-bottom: -70px;
 }
 
 .photo__column a:hover{
     text-decoration: none;
+}
+
+.photo__column img{
+    transition: transform 0.25s;
+}
+
+.photo__column:hover img{
+    transform: scale(1.1);
 }
 
 

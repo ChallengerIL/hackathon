@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Inter', sans-serif;
+}
+
 header {
     background-color: #043873;
     color: #fff;
@@ -23,13 +27,17 @@ nav ul li {
     padding: 0 15px;
 }
 
-li a {
-    color: white;
+/* links */
+
+a {
+    color: #fff;
     text-decoration: none;
+    transition: 0.3s linear;
 }
 
-li a:hover {
-    color: #84d7ff;
+a:hover {
+    color: #ffdd00;
+    text-decoration: underline;
 }
 
 .row {

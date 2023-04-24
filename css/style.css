@@ -6,6 +6,31 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+p{
+    padding: 10px 0;
+}
+
+.title-white{
+    color: #fff;
+}
+
+.subtitle__white{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* fonts */
+
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0;
 }
 
 img{
@@ -68,9 +93,13 @@ a:hover {
 
 /* photo-menu */
 
+.bg-blue{
+    background-color: #043873;
+}
+
 
 .photo-menu{
-    background-color: #043873;
+    
     background: #043873 url(../img/bg-top.png) no-repeat center top;
     background-size: cover;
 }
@@ -114,4 +143,35 @@ a:hover {
 }
 
 
+/* about */
+
+.about{
+    padding: 20px 0 50px 0;
+}
+
+.about__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.about__desc {
+    max-width: 520px;
+}
+.about__img {
+
+}
+
+.about p{
+    font-size: 22px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+.before{
+    padding: 20px 0 50px 0;
+}
+
+.before__title{
+    margin-bottom: 10px;
+}
 

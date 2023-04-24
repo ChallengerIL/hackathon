@@ -6,24 +6,75 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+p{
+    padding: 10px 0;
+}
+
+.title-white{
+    color: #fff;
+}
+
+.subtitle__white{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* fonts */
+
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1125px;
+    margin: 0 auto;
 }
 
 header {
     background-color: #043873;
     color: #fff;
-    height: 145px;
-    text-align: center;
-    width: 100%;
+    padding-bottom: 50px;
 }
 
-nav ul {
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 23px;
+}
+
+.logo__text{
+    font-weight: bold;
+    font-size: 21px;
+    padding-left: 5px;
+}
+
+.header__logo:hover{
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+
     list-style-type: none;
     margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    
     padding: 0 15px;
 }
 
@@ -40,48 +91,168 @@ a:hover {
     text-decoration: underline;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+/* photo-menu */
 
-.column {
-    flex: 30%;
-    max-width: 30%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    padding: 0 4px;
-    vertical-align: middle;
-    width: 300px;
-    max-width: 100%;
-}
-
-#photo-menu {
+.bg-blue{
     background-color: #043873;
-    height: 100%;
-    padding-bottom: 40px;
 }
 
-#logo {
-    margin-top: 60px;
-    margin-bottom: 20px;
+
+.photo-menu{
+    
+    background: #043873 url(../img/bg-top.png) no-repeat center top;
+    background-size: cover;
 }
 
-@media (max-width: 650px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+.photo__row{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 70px;
 }
 
-@media (max-width: 350px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+.photo__column{
+    width: 33%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.overlay{
+    position: relative;
+    top: -68px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0;
+    margin-bottom: -70px;
+}
+
+.photo__column a:hover{
+    text-decoration: none;
+}
+
+.photo__column img{
+    transition: transform 0.25s;
+}
+
+.photo__column:hover img{
+    transform: scale(1.1);
+}
+
+
+/* about */
+
+.about{
+    padding: 20px 0 50px 0;
+}
+
+.about__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.about__desc {
+    max-width: 520px;
+}
+.about__img {
+
+}
+
+.about p{
+    font-size: 22px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+
+
+.before{
+    padding: 20px 0 50px 0;
+}
+
+.before__title{
+    margin-bottom: 10px;
+}
+
+
+.checkboxes__block {
+}
+.white-block .check__item{
+    background-color: #fff;
+}
+.check__row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.check__item {
+    padding: 20px 40px;
+    
+}
+
+.cont {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.cont input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.cont:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+.cont input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.cont input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.cont .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check__desc {
 }

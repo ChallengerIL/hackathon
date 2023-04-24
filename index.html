@@ -14,32 +14,143 @@
 <body>
     <header>
         <div class="container">
-            <img src="./img/logo.png" id="logo" alt="Olimlist logo">
+            <a href="#" class="header__logo">
+                <div class="logo">
+                    <img src="./img/logo.svg" id="logo" alt="Olimlist logo">
+                    <h1 class="logo__text">olimlist</h1>
+                </div>
+            </a>
         <nav>
             <ul>
-                <li><a href="#">About Aliyah</a></li>
-                <li><a href="#">Before Flight</a></li>
-                <li><a href="#">At the Airport</a></li>
-                <li><a href="#">First Steps in Israel</a></li>
+                <li><a href="#">About aliyah</a></li>
+                <li><a href="#">Before flight</a></li>
+                <li><a href="#">At the airport</a></li>
+                <li><a href="#">First steps in Israel</a></li>
             </ul>
         </nav>
         </div>
     </header>
     <main>
-        <section class="photo-menu">
+        <section class="photo-menu bg-blue">
             <div class="container">
                 <div class="photo__row">
-                    <div class="photo__column">
-                        <img src="./img/before.jpg" alt="before flight">
-                        <div class="overlay"></div>
+                    
+                        <div class="photo__column">
+                            <a href="#">
+                                <img src="./img/before.jpg" alt="before flight">
+                                <div class="overlay">
+                                    <div class="overlay__title">Before flight</div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="photo__column">
+                            <a href="#">
+                                <img src="./img/airport.jpg" alt="at the airport">
+                                <div class="overlay">
+                                    <div class="overlay__title">At the airport</div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="photo__column">
+                            <a href="#">
+                                <img src="./img/first-steps.jpg" alt="first steps">
+                                <div class="overlay">
+                                    <div class="overlay__title">First steps</div>
+                                </div>
+                            </a>
+                        </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__title">
+                    <h3>what is aliyah?</h3>
+                    <div class="about__row">
+                        <div class="about__desc">
+                            <p>The Hebrew word “Aliyah” literally means ascent or rise, but for generations it has been used to mean “immigration to Israel.” Israel has always been the center of the Jewish universe, but for centuries the dream of moving to Israel was just that, a dream.</p>
+
+
+                               <p> In the 1880s, organized groups began to immigrate to Israel with the goal of building communities and settling the land. “Aliyah” became the official term for immigration to Israel when, in 1950, the State of Israel opened her doors to the Jews of the world and passed the Law of Return.</p>
+                        </div>
+                        <div class="about__img">
+                            <img src="./img/what.jpg" alt="about">
+                        </div>
                     </div>
-                    <div class="photo__column">
-                        <img src="./img/airport.jpg" alt="at the airport">
-                        <div class="overlay"></div>
+                </div>
+            </div>
+        </section>
+        <section class="before bg-blue">
+            <div class="container">
+                <h3 class="before__title title-white">Before flight</h3>
+                <div class="subtitle__white">what to take care of before your flight</div>
+                <div class="checkboxes__block white-block">
+                    <div class="check__row">
+                        <div class="check__item">
+                            
+                            <label class="cont">Scales
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
+                        <div class="check__item">
+                            <label class="cont" >Scales
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
                     </div>
-                    <div class="photo__column">
-                        <img src="./img/first-steps.jpg" alt="first steps">
-                        <div class="overlay"></div>
+                    <div class="check__row">
+                        <div class="check__item">
+                            
+                            <label class="cont">Scales
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
+                        <div class="check__item">
+                            <label class="cont" >Scales
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check__row">
+                        <div class="check__item">
+                            
+                            <label class="cont">Scales
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
+                        <div class="check__item">
+                            <label class="cont" >Scales
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="check__desc">
+                                Before repatriation, you must check your tax debts and pay fines and penalties
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

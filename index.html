@@ -28,10 +28,10 @@
             </a>
         <nav>
             <ul>
-                <li><a href="#">About aliyah</a></li>
-                <li><a href="#">Before flight</a></li>
-                <li><a href="#">At the airport</a></li>
-                <li><a href="#">First steps in Israel</a></li>
+                <li><a href="#about">About aliyah</a></li>
+                <li><a href="#before">Before flight</a></li>
+                <li><a href="#airport">At the airport</a></li>
+                <li><a href="#steps">First steps in Israel</a></li>
                 <li><input class="print" type="button" value="Print this page" onclick="printPage()" /></li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
                 <div class="photo__row">
                     
                         <div class="photo__column">
-                            <a href="#">
+                            <a href="#before">
                                 <img src="./img/before.jpg" alt="before flight">
                                 <div class="overlay">
                                     <div class="overlay__title">Before flight</div>
@@ -53,7 +53,7 @@
                     
                     
                         <div class="photo__column">
-                            <a href="#">
+                            <a href="#airport">
                                 <img src="./img/airport.jpg" alt="at the airport">
                                 <div class="overlay">
                                     <div class="overlay__title">At the airport</div>
@@ -62,7 +62,7 @@
                         </div>
                     
                         <div class="photo__column">
-                            <a href="#">
+                            <a href="#steps">
                                 <img src="./img/first-steps.jpg" alt="first steps">
                                 <div class="overlay">
                                     <div class="overlay__title">First steps</div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__title">
                     <h3>what is aliyah?</h3>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="before bg-blue">
+        <section class="before bg-blue" id="before">
             <div class="container">
                 <h3 class="before__title title-white">Before flight</h3>
                 <div class="subtitle__white">what to take care of before your flight</div>
@@ -162,7 +162,7 @@
                 </div>
             </div>
         </section>
-        <section class="airport bg-white">
+        <section class="airport bg-white" id="airport">
             <div class="container">
                 <h3 class="airport__title">At the airport</h3>
                 <div class="subtitle">what to take care of before your flight</div>
@@ -233,7 +233,7 @@
                 </div>
             </div>
         </section>
-        <section class="steps bg-blue">
+        <section class="steps bg-blue" id="steps">
             <div class="container">
                 <h3 class="steps__title title-white">First steps in Israel</h3>
                 <div class="subtitle__white">here are your next steps after making Aliyah</div>
@@ -310,20 +310,28 @@
                 <div class="subtitle">it is useful to read and save this important information</div>
                 <div class="resources__block">
                     <div class="resources__item">
+                        <a href="https://www.gov.il/">
                         <div class="resources__img"><img src="./img/gov.jpg" alt="government"></div>
-                        <div class="resources__link"><a href="#">Gov.il - public services website</a></div>
+                        <div class="resources__link">Gov.il - public services website</div>
+                    </a>
                     </div>
                     <div class="resources__item">
+                        <a href="https://www.gov.il/en/Departments/General/contact-moia">
                         <div class="resources__img"><img src="./img/aliyah.jpg" alt="govaliyah"></div>
-                        <div class="resources__link"><a href="#">Ministry of Immigration and Integration</a></div>
+                        <div class="resources__link">Ministry of Immigration and Integration</div>
+                        </a>
                     </div>
                     <div class="resources__item">
+                        <a href="https://www.yad2.co.il/">
                         <div class="resources__img"><img src="./img/yad.jpg" alt="yad2"></div>
-                        <div class="resources__link"><a href="#">Yad2 - second hand sales site</a></div>
+                        <div class="resources__link">Yad2 - second hand sales site</div>
+                        </a>
                     </div>
                     <div class="resources__item">
+                        <a href="https://myvisit.com/#!/home/signin/">
                         <div class="resources__img"><img src="./img/myvisit.jpg" alt="myvisit"></div>
-                        <div class="resources__link"><a href="#">MyVisit - Application for recording in departments</a></div>
+                        <div class="resources__link">MyVisit - Application for recording in departments</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -333,12 +341,12 @@
         <div class="container">
             <div class="footer__row">
                 <div class="ghlinks">
-                    <a href="#">Hackathon project in Developers Institute<br> Yuriy Sergo and Ilona Skargovskaya</a>
+                    <a href="https://github.com/ChallengerIL/hackathon">Hackathon project in Developers Institute<br> Yuriy Sergo and Ilona Skargovskaya</a>
                 </div>
                 <div class="social__row">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/developers.institute/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/developers.institute/?hl=en" class="fa fa-instagram"></a>
+                    <a href="https://il.linkedin.com/school/developers.institute/" class="fa fa-linkedin"></a>
                     
                 </div>
             </div>

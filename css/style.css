@@ -10,11 +10,18 @@ body{
 }
 
 p{
-    padding: 10px 0;
+    padding: 0 0 15px 0;
 }
 
 .title-white{
     color: #fff;
+}
+
+.subtitle{
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 70px;
 }
 
 .subtitle__white{
@@ -51,7 +58,7 @@ header {
 .logo{
     display: flex;
     justify-content: center;
-    padding-top: 65px;
+    padding-top: 50px;
     padding-bottom: 23px;
 }
 
@@ -68,9 +75,11 @@ header {
 header nav ul{
     display: flex;
     justify-content: center;
+    align-items: center;
 
     list-style-type: none;
     margin: 0;
+    
 }
 
 nav ul li {
@@ -135,11 +144,12 @@ a:hover {
 }
 
 .photo__column img{
-    transition: transform 0.25s;
+    transition: linear 0.3s;
 }
 
 .photo__column:hover img{
     transform: scale(1.1);
+    opacity: .5;
 }
 
 
@@ -155,7 +165,7 @@ a:hover {
     gap: 100px;
 }
 .about__desc {
-    max-width: 520px;
+    max-width: 45%;
 }
 .about__img {
 
@@ -201,6 +211,7 @@ a:hover {
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
+    font-weight: bold;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -222,14 +233,17 @@ a:hover {
     height: 25px;
     width: 25px;
     background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .cont:hover input ~ .checkmark {
     background-color: #ccc;
+    
   }
 
 .cont input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #0071E3;
   }
 
 .checkmark:after {
@@ -243,10 +257,10 @@ a:hover {
 }
 
 .cont .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 8px;
+    top: 4px;
     width: 5px;
-    height: 10px;
+    height: 9px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -255,4 +269,49 @@ a:hover {
 }
 
 .check__desc {
+    color: #999;
+    line-height: 19px;
+    margin-left: 35px;
+}
+
+/* print */
+
+.print{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.print:hover{
+    cursor: pointer;
+    background-color: #ffdd00;
+    
+}
+
+/* airport */
+
+.airport {
+    padding: 20px 0 50px 0;
+}
+
+
+.airport__title {
+    margin-bottom: 10px;
+}
+
+
+.check__item {
+    background-color: #F8F8F8;
+}
+
+
+/* steps */
+
+.steps {
+    padding: 20px 0 50px 0;
+}
+
+.steps__title {
+    margin-bottom: 10px;
 }

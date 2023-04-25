@@ -11,6 +11,7 @@ body{
 
 p{
     padding: 0 0 15px 0;
+    text-indent: 25px;
 }
 
 .title-white{
@@ -89,15 +90,26 @@ nav ul li {
 
 /* links */
 
-a {
+header a, .photo-menu a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s linear;
 }
 
-a:hover {
+header a:hover, .photo-menu a:hover {
     color: #ffdd00;
     text-decoration: underline;
+}
+
+a{
+    color:#043873;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #ff0000;
 }
 
 /* photo-menu */
@@ -314,4 +326,76 @@ a:hover {
 
 .steps__title {
     margin-bottom: 10px;
+}
+
+/* resources */
+
+.resources {
+    padding: 20px 0 50px 0;
+}
+
+
+
+.resources__title {
+    margin-bottom: 10px;
+}
+.subtitle {
+}
+.resources__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.resources__item {
+    max-width: 24%;
+}
+
+.resources__img {
+    height: 200px;
+}
+
+.resources__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.resources__link{
+    padding-top: 10px;
+}
+.resources__link a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* footer */
+
+footer{
+    background-color: #043873;
+    padding: 50px 0;
+}
+
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+    background: white;
+    color: #043873;
+  }
+
+footer .fa:hover{
+    background-color: #ffdd00;
 }
